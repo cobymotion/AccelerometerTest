@@ -2,6 +2,7 @@ package com.example.coby.ejemplojuego;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -15,7 +16,7 @@ public class Grafico {
     private int ancho, alto;
 
     private View view;
-    public static final int MAX_VELOCIDAD=20;
+    public static final int MAX_VELOCIDAD=40;
 
     public Grafico(View view, Drawable drawable)
     {
@@ -41,6 +42,7 @@ public class Grafico {
     public void incrementaPos(){
         posX+=incX;
         posY+=incY;
+        Log.e("Posición","POS X : " + posX + " POS Y: " + posY);
 
     }
 
